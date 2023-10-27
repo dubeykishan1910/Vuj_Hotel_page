@@ -1,0 +1,40 @@
+{
+  "user": [
+    {
+      "email": "dubeykishan1910@gmail.com",
+      "name": "kishan",
+      "pass": "kishan@123",
+      "id": 1
+    }
+  ],
+  "restaurant": [
+    {
+      "id": 2,
+      "name": "dukan",
+      "address": "json-server --watch db.json ",
+      "contact": 71,
+      "rating": 3
+    },
+    {
+      "id": 3,
+      "name": "pathe",
+      "address": "kamraj",
+      "contact": 45986,
+      "rating": 2
+    },
+    {
+      "id": 1,
+      "name": "choot",
+      "address": "json-server --watch db.json ",
+      "contact": 7851,
+      "rating": 3
+    },
+    {
+      "id": 4,
+      "name": "Ram",
+      "address": "json-server --watch db.json ",
+      "contact": 5050,
+      "rating": 5
+    }
+  ]
+}
