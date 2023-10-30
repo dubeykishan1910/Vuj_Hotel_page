@@ -44,7 +44,7 @@
       if(result.status==200 && result.data.length > 0)
       {
         localStorage.setItem("user-info",JSON.stringify(result.data));
-        this.$router.push({name:'HomeCom'})
+        this.$router.push({name:'ComC'})
       }
       else{
         console.log("error");
@@ -58,7 +58,7 @@
   mounted(){
     let user = localStorage.getItem('user-info');
     if (user){
-      this.$router.push({name:'HomeCom'})
+      this.$router.push({name:'ComC'})
     }
   }
 

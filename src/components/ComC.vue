@@ -49,6 +49,16 @@ export default {
         }
     },
     async mounted() {
+
+        // taking data from local storage
+        let user = localStorage.getItem('user-info');
+        
+        
+        if (!user) {
+            this.$router.push({name: 'SignUp'})
+        }
+
+
         let result = await axios.get("https://jsonplaceholder.typicode.com/posts");
         this.list = result.data
         
@@ -56,6 +66,8 @@ export default {
 
 };
 </script>
+
+
 
 <style scoped>
 table {
@@ -74,3 +86,4 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 </style>
+,

@@ -1,5 +1,5 @@
 <template>
-    <img class="logo" alt="Vue logo" src="../assets/logo.png">
+  
 <div class="signup-form">
     <h2>Sign Up</h2>
     <form @submit.prevent="signup">
@@ -52,7 +52,7 @@ export default {
       if(result.status==201)
       {
         localStorage.setItem("user-info",JSON.stringify(result.data))
-        this.$router.push({name:'HomeCom'})
+        this.$router.push({name:'ComC'})
       }
       
     },
@@ -62,7 +62,7 @@ export default {
   mounted(){
     let user = localStorage.getItem('user-info');
     if (user){
-      this.$router.push({name:'HomeCom'})
+      this.$router.push({name:'ComC'})
     }
   }
 
