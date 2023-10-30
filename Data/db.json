@@ -5,6 +5,12 @@
       "name": "kishan",
       "pass": "kishan@123",
       "id": 1
+    },
+    {
+      "email": "sonal@gmail.com",
+      "name": "sonal",
+      "pass": "sonal@123",
+      "id": 2
     }
   ],
   "restaurant": [
@@ -16,18 +22,11 @@
       "rating": 3
     },
     {
-      "id": 3,
-      "name": "pathe",
       "address": "kamraj",
+      "name": "pathe",
       "contact": 45986,
-      "rating": 2
-    },
-    {
-      "id": 1,
-      "name": "choot",
-      "address": "json-server --watch db.json ",
-      "contact": 7851,
-      "rating": 3
+      "rating": 2,
+      "id": 3
     },
     {
       "id": 4,
@@ -35,6 +34,20 @@
       "address": "json-server --watch db.json ",
       "contact": 5050,
       "rating": 5
+    },
+    {
+      "address": "aurange",
+      "name": "satyam",
+      "contact": 1925331242063,
+      "rating": "3",
+      "id": 5
+    },
+    {
+      "address": "bank",
+      "name": "rahul",
+      "contact": 1921321242018,
+      "rating": "3",
+      "id": 6
     }
   ]
 }

@@ -8,9 +8,10 @@
         <ul class="nav-list">
           <li class="nav-item"><router-link to="/">Home</router-link></li>
 
-          <li class="nav-item"><router-link to="/UpdateDetails/1">Update Details</router-link></li>
+          <li class="nav-item"><router-link to="/UpdateDetails/3">Update Details</router-link></li>
           
-          <li class="nav-item"><router-link to="#">Services</router-link></li>
+          <li class="nav-item"><router-link to="/comp">API Data</router-link></li>
+          <li class="nav-item"><router-link to="/add">Add Data</router-link></li>
           <li v-on:click="logout" class="nav-item"><a href="#">Logout</a></li>
         </ul>
       </nav>

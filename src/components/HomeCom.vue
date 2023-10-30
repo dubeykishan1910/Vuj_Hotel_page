@@ -7,9 +7,10 @@
 
     <thead>
         <tr>
+            
             <th>ID</th>
             <th>Name</th>
-            <th>Email</th>
+            <th>Contact</th>
             <th>Address</th>
             <th>Rating out of 5</th>
             <th>Update</th>
@@ -19,7 +20,10 @@
 
     <tbody>
         <!-- with the help of for loop show api data -->
+        
         <tr v-for="i in restaurants" :key="i.id">
+            
+            
             <td>{{ i.id }}</td>
             <td>{{ i.name }}</td>
             <td>{{ i.contact }}</td>
@@ -44,6 +48,7 @@ export default {
     name: "HomeCom",
     data() {
         return {
+            
             name: '',
             restaurants: []
         }
@@ -54,6 +59,8 @@ export default {
 
     // for deleting data
     methods:{
+       
+
 
         async deleteRes(id){
             let result = await axios.delete("http://localhost:3000/restaurant/"+id);
@@ -67,6 +74,8 @@ export default {
         async loadData(){
         // taking data from local storage
         let user = localStorage.getItem('user-info');
+        this.name= user.slice(36,41)
+        console.warn(user)
         
 
         if (!user) {
@@ -74,17 +83,16 @@ export default {
         }
         // for api get request
         let result = await axios.get("http://localhost:3000/restaurant");
-        
+        console.log(result.data)
         this.restaurants = result.data
         }
 
     },
 
     mounted() {
-        this.loadData()
-
+    
         
-
+        this.loadData()
     }
 
 };
