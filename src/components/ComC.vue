@@ -2,7 +2,7 @@
 <div>
     <Headerc />
   
-    <h1>API data</h1>
+    <h1 class="title">API data</h1>
   </div>
     <table>
 
@@ -70,16 +70,22 @@ export default {
 
 
 <style scoped>
+.title{
+    margin-left: 1.5em;
+}
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 90%;
+  margin-inline: auto;
+  
 }
 
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+  font-size: 1rem;
 }
 
 tr:nth-child(even) {

@@ -11,6 +11,18 @@
       "name": "sonal",
       "pass": "sonal@123",
       "id": 2
+    },
+    {
+      "email": "dubeykhushal1910@gmail.com",
+      "name": "Khushal",
+      "pass": "khushal@123",
+      "id": 3
+    },
+    {
+      "email": "satyam@gmail.com",
+      "name": "satyam",
+      "pass": "pass",
+      "id": 4
     }
   ],
   "restaurant": [

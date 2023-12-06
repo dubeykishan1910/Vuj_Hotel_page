@@ -13,51 +13,66 @@ export default {
 
 
 <style>
-.logo{
-    width: 100px;
-}
-.signup-form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
+
+@import "./style.css";
+
+.containerr {
+
+max-width: 100%;
+height: 100vh;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+color: black;
+background-color: #4070f4;
+font-size: 0.938rem;
+
 }
 
-.register {
-  margin-bottom: 15px;
+.form{
+    max-width: 430px;
+    width: 100%;
+    padding: 2em;
+    border-radius: 1em;
+    background: #FFF;
+    
+}
+header{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #232836;
+    /* text-align: center; */
+}
+form{
+    margin-top: 1em;
 }
 
-label {
-  display: block;
-  font-weight: bold;
+form .field{
+    height: 45px;
+    width: 100%;
+    margin-top: 1em;
 }
-
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="password"] {
-  width: 95%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  outline: none;
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+    border-radius: 1em;
+    border: 2px solid #CACACA;
 }
-
-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.field button:hover{
+    background: #4070f4;
 }
-
-button:hover {
-  background-color: #0056b3;
+.field-input{
+    font-size: 16px;
+    font-weight: 400;
+}
+.form-link span,
+.form-link .a{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: .5em;
+    
 }
 </style>
